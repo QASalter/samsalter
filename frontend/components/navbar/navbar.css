@@ -1,0 +1,116 @@
+.bnavbar {
+  background-color: transparent ;
+}
+.bnavbar a:hover{
+  text-decoration: none  !important;
+}
+.bnav-light a {
+  color: white  !important;
+  text-decoration: none;
+}
+
+.bnav-light a.is-active {
+  border-bottom: 1px solid white  !important;
+  padding-bottom: 2%  !important;
+}
+
+.nav-brand {
+    font-size: 100%;
+    font-weight: normal;
+    color: black;
+}
+
+.bnavbar .bcontainer {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.bcontainer {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-order {
+      padding-left: 1rem !important;
+      left: 0;
+      position: absolute;
+      z-index: 999;
+    }
+}
+
+/*  NAVBAR DARK*/
+
+.bnav-dark a {
+  color: black;
+  text-decoration: none;
+}
+.bnav-dark a.is-active {
+  border-bottom: 1px solid black;
+  padding-bottom: 2%;
+}
+/* TO BE REMOVED */
+
+.section--home a, .section--work a {
+    color: white;
+}
+
+.about__statement p {
+    margin: 0;
+    text-shadow: 2px 2px #737373;
+
+    -webkit-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+
+
+.bnavbar {
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #edebec;
+    -webkit-transition: background .2s ease;
+    -o-transition: background .2s ease;
+    -moz-transition: background .2s ease;
+    transition: background .2s ease;
+}
+
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+.bnavbar h1 {
+    float: right;
+}
+
+.bnavbar nav, .bnavbar nav {
+    display: block;
+    float: left;
+    background-color: none;
+        margin-left: 2vw;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, body, code, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.bnavbar nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.section--home .bnavbar nav a.active, .section--work .bnavbar nav a.is-active {
+    border-color: white;
+}
+
+.bnavbar nav a {
+    border-bottom: 1px solid transparent;
+}

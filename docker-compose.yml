@@ -1,0 +1,37 @@
+version: '3'
+services:
+  web:
+    build: .
+    tty: true
+    stdin_open: true
+    image: mpjcfoto
+    ports:
+     - "80:80"
+    volumes:
+     - .:/usr/src
+    env_file: .env
+    depends_on:
+      - db
+      - webpack
+  db:
+    image: postgres:latest
+    ports:
+      - "6000:5432"
+    volumes:
+      - 'postgres:/var/lib/postgresql/data'
+    env_file:
+      - '.env'
+
+  webpack:
+    image: mpjcfoto
+    command: bash -c "./bin/webpack-dev-server -host 0.0.0.0 -port 3040 --inline true"
+    env_file:
+      - '.env'
+    volumes:
+      - .:/usr/src
+    ports:
+      - '3035:3035'
+
+volumes:
+  postgres:
+  webpack:
